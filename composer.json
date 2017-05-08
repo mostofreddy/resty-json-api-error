@@ -1,5 +1,5 @@
 {
-    "name": "resty/json-api-error",
+    "name": "restyphp/json-api-error",
     "type": "library",
     "description": "",
     "keywords": ["rest", "api", "framework", "hateoas", "hal", "jsonapi", "json"],
