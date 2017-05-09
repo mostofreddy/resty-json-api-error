@@ -3,6 +3,12 @@ Resty - Json API Error
 
 Simple implementación del estándar [JSON-API Errors](http://jsonapi.org/format/#errors) (v1.0).
 
+[![Build Status](https://travis-ci.org/mostofreddy/resty-json-api-error.svg?branch=master)](https://travis-ci.org/mostofreddy/resty-json-api-error)
+[![Latest Stable Version](https://poser.pugx.org/restyphp/json-api-error/v/stable)](https://packagist.org/packages/restyphp/json-api-error)
+[![License](https://poser.pugx.org/restyphp/json-api-error/license)](https://packagist.org/packages/restyphp/json-api-error)
+[![Total Downloads](https://poser.pugx.org/restyphp/json-api-error/downloads)](https://packagist.org/packages/restyphp/json-api-error)
+[![composer.lock](https://poser.pugx.org/restyphp/json-api-error/composerlock)](https://packagist.org/packages/restyphp/json-api-error)
+
 
 Versión estable
 ---------------
