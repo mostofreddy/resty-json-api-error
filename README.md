@@ -1,7 +1,4 @@
-Resty - Json API Error
-=======================
-
-Framework agnostic [JSON-API Errors](http://jsonapi.org/format/#errors) (v1.0) implementation
+![Resty - Json API Error](https://mostofreddy.github.io/resty-json-api-error/images/resty-json-api-errors.png)
 
 [![Build Status](https://travis-ci.org/mostofreddy/resty-json-api-error.svg?branch=master)](https://travis-ci.org/mostofreddy/resty-json-api-error)
 [![Latest Stable Version](https://poser.pugx.org/restyphp/json-api-error/v/stable)](https://packagist.org/packages/restyphp/json-api-error)
@@ -10,41 +7,15 @@ Framework agnostic [JSON-API Errors](http://jsonapi.org/format/#errors) (v1.0) i
 [![composer.lock](https://poser.pugx.org/restyphp/json-api-error/composerlock)](https://packagist.org/packages/restyphp/json-api-error)
 
 
+Resty - JSON API Errors, es una librería PHP (agnostica a cualquier Framework) que permite estandarizar y serializar de forma fácil cualquier mensaje de error que pueda devolver una API Restfull, para ello utiliza el estándar [JSON-API](http://jsonapi.org/).
+
+Para mas detalle ver [documentación en wiki](https://github.com/mostofreddy/resty-json-api-error/wiki/Introducci%C3%B3n)
+
+
 Versión estable
 ---------------
 
 0.1.0
-
-JSON API Errors
----------------
-
-La especificación de [errores de JSON API](http://jsonapi.org/format/#errors) define __objetos error__ para proporcionar información adicional acerca de los problemas encontrados durante un request pudiendo devolver uno o mas objetos dentro de un array.
-
-Un objeto de error puede tener los siguientes atributos:
-
-* __id__: Identificador único para esta ocurrencia particular del problema.
-* __links__: [Objeto Links](http://jsonapi.org/format/#document-links) que contiene los siguientes miembros:
-    * *about*: Enlace que conduce a mayores detalles sobre esta ocurrencia del problema.
-* __status__: Código de estado HTTP del problema, expresado como un valor string.
-* __code__: Código de error específico de la aplicación, expresado como un valor string.
-* __title__: Breve resumen del problema. NO DEBE cambiar si el problema se repite.
-* __detail__: Explicación mas detallada del problema.
-* __source__: Un objeto que contiene referencias a la fuente del error, opcionalmente incluyendo cualquiera de los siguientes miembros:
-    * *pointer*: JSON Pointer [RFC6901](https://tools.ietf.org/html/rfc6901) para la entidad asociada en el documento de solicitud [por ejemplo, `/data` para un objeto de datos principal, o `/data/attributes/title` para un atributo específico].
-    * *parameter*: Cadena que indica qué parámetro de consulta URI provocó el error.
-*meta: [Objeto meta](http://jsonapi.org/format/#document-meta) que contiene meta-información no estándar sobre el error.
-
-
-__Formato ejemplo__
-
-```
-{
-    "errors": [
-        {...},
-        {...}
-    ]
-}
-```
 
 Requerimientos
 --------------
@@ -62,10 +33,13 @@ Instalación
 }
 ```
 
-Uso
----
+Documentación
+-------------
 
-__Ejemplo básico__
+Documentación y API en [Wiki](https://github.com/mostofreddy/resty-json-api-error/wiki)
+
+Ejemplo de uso básico
+---------------------
 
 ```
 use Resty\JsonApiError\Message;
@@ -90,9 +64,27 @@ Respuesta
 
 ```
 
-Documentación y API en la Wiki
 
 License
 -------
 
 The MIT License (MIT). Ver el archivo [LICENSE](LICENSE.md) para más información
+
+Test unitario
+------------
+
+Los test unitarios utilizan la versión 6.1 de [PHPUnit](https://phpunit.de/)
+
+```
+php vendor/bin/phpunit
+```
+
+PHPCS
+-----
+
+Como estándar de código se emplea [PEAR](https://pear.php.net/manual/en/standards.php) y la versión utilizada de [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer) es la 3.0
+
+```
+cp ruleset.xml.dist ruleset.xml
+php vendor/bin/phpcs --standard=ruleset.xml
+```
