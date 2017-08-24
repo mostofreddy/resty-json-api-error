@@ -1,6 +1,7 @@
 ![Resty - Json API Error](https://mostofreddy.github.io/resty-json-api-error/images/resty-json-api-errors.png)
 
 [![Build Status](https://travis-ci.org/mostofreddy/resty-json-api-error.svg?branch=master)](https://travis-ci.org/mostofreddy/resty-json-api-error)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mostofreddy/resty-json-api-error/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mostofreddy/resty-json-api-error/?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/restyphp/json-api-error/v/stable)](https://packagist.org/packages/restyphp/json-api-error)
 [![License](https://poser.pugx.org/restyphp/json-api-error/license)](https://packagist.org/packages/restyphp/json-api-error)
 [![Total Downloads](https://poser.pugx.org/restyphp/json-api-error/downloads)](https://packagist.org/packages/restyphp/json-api-error)
