@@ -115,11 +115,11 @@ class Error
     /**
      * A human-readable explanation specific to this occurrence of the problem
      *
-     * @param string $detail Problem detail
+     * @param mixed $detail Problem detail
      * 
      * @return self
      */
-    public function setDetails(string $detail):Error
+    public function setDetails($detail):Error
     {
         $this->data['details'] = $detail;
         return $this;
@@ -148,6 +148,12 @@ class Error
     public function setMeta(array $meta):Error
     {
         $this->data['meta'] = $meta;
+        return $this;
+    }
+
+    public function set($key, $value):Error
+    {
+        $this->data[$key] = $value;
         return $this;
     }
 }
