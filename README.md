@@ -11,18 +11,18 @@
 
 Resty - JSON API Errors, es una librería PHP (agnostica a cualquier Framework) que permite estandarizar y serializar de forma fácil cualquier mensaje de error que pueda devolver una API Restfull, para ello utiliza el estándar [JSON-API](http://jsonapi.org/).
 
-Para mas detalle ver [documentación en wiki](https://github.com/mostofreddy/resty-json-api-error/wiki/Introducci%C3%B3n)
+Para mas detalle ver [documentación en wiki](https://github.com/mostofreddy/resty-json-api-error/wiki)
 
 
 Versión estable
 ---------------
 
-0.1.0
+1.0.0
 
 Requerimientos
 --------------
 
-* PHP 7+
+* PHP 7.1+
 
 Instalación
 -----------
@@ -30,7 +30,7 @@ Instalación
 ```
 {
     "require": {
-        "restyphp/json-api-error": "0.1.*"
+        "restyphp/json-api-error": "1.0.*"
     }
 }
 ```

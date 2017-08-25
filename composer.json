@@ -2,10 +2,10 @@
     "name": "restyphp/json-api-error",
     "type": "library",
     "description": "Framework agnostic JSON-API Errors (v1.0) implementation",
-    "keywords": ["rest", "api", "framework", "hateoas", "hal", "jsonapi", "json"],
+    "keywords": ["rest", "api", "framework", "hateoas", "hal", "jsonapi", "json", "error", "standard", "restfull"],
     "homepage": "https://github.com/mostofreddy/resty-json-api-error",
     "license": "MIT",
-    "version": "0.1.1",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Federico Lozada Mosto",
@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "php": ">=7.0.0"
+        "php": ">=7.1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "6.1.*",
