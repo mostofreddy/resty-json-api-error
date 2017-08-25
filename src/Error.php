@@ -151,6 +151,14 @@ class Error
         return $this;
     }
 
+    /**
+     * Custom value
+     * 
+     * @param string $key   Attribute name
+     * @param mixed  $value Value
+     *
+     * @return self
+     */
     public function set($key, $value):Error
     {
         $this->data[$key] = $value;
