@@ -107,7 +107,7 @@ class ErrorTest extends TestCase
         $this->assertEquals($expected, $error->toArray());
     }
 
-     /**
+    /**
      * Test setStatus method
      * 
      * @return void
@@ -203,7 +203,7 @@ class ErrorTest extends TestCase
         $this->assertEquals($expected, $error->toArray());
     }
 
-     /**
+    /**
      * Test multiple set values
      * 
      * @return void
