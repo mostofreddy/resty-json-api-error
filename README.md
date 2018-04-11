@@ -1,3 +1,5 @@
+**Deprecated**
+
 ![Resty - Json API Error](https://mostofreddy.github.io/resty-json-api-error/images/resty-json-api-errors.png)
 
 [![Build Status](https://travis-ci.org/mostofreddy/resty-json-api-error.svg?branch=master)](https://travis-ci.org/mostofreddy/resty-json-api-error)
